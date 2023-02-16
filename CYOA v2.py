@@ -1,16 +1,12 @@
-import time
 
-def typewriter(text, delay=0.1):
-  for letter in text:
-    print(letter, end='', flush=True)
-    time.sleep(delay)
-    name = input("Type your name: ")
-    print("Make sure to type each command shown in the parenthesis in ALL CAPS. Otherwise, the game will experience issues.")
-    print("You've awoken in a cave, surrounded by crates and the darkness. All that you have is a suit that seems to have been made for space travel and a helmet that has a large, visible crack on the visor. You hear the distant screeches of something. The horrific sound is rapidly approaching. You're unprepared to face this.")
-    print("There are three pathways, although all three are poorly lit. Pick one, or face the consequences. (LEFT/RIGHT/STRAIGHT)")
 
-    do = input(": ")
-    if do == "RIGHT":
+name = input("Type your name: ")
+print("Make sure to type each command shown in the parenthesis in ALL CAPS. Otherwise, the game will experience issues.")
+print("You've awoken in a cave, surrounded by crates and the darkness. All that you have is a suit that seems to have been made for space travel and a helmet that has a large, visible crack on the visor. You hear the distant screeches of something. The horrific sound is rapidly approaching. You're unprepared to face this.")
+print("There are three pathways, although all three are poorly lit. Pick one, or face the consequences. (LEFT/RIGHT/STRAIGHT)")
+
+do = input(": ")
+if do == "RIGHT":
         print("The path went on and on, curving in all sorts of directions. However, it seems that you managed to survive a fate that was coming for now. As you reach the end of the dark tunnel, you stop to catch a break.")
         print("You've arrived at a small room, that seemed to be fully furnished for some reason. your head starts to ring again as your memories seemed to dim. The path behind you is now gone entirely, and you stand right against the room's wall")
         print("Upon the table that sat at the center of the room was a plate of seemingly innocent cookies.")

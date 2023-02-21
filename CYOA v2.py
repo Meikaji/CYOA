@@ -1,5 +1,3 @@
-
-
 name = input("Type your name: ")
 print("Make sure to type each command shown in the parenthesis in ALL CAPS. Otherwise, the game will experience issues.")
 print("You've awoken in a cave, surrounded by crates and the darkness. All that you have is a suit that seems to have been made for space travel and a helmet that has a large, visible crack on the visor. You hear the distant screeches of something. The horrific sound is rapidly approaching. You're unprepared to face this.")
@@ -17,7 +15,7 @@ if do == "RIGHT":
             print("You decide to cave and take one of these extremely tempting cookies.")
             print("The cookie almost instantly melts in your hand, the rest of your arm following as your body turns to an unrecoverable goop that spills from the cracks of the helmet.")
             print("You're Done. Cause: Contact with corrosive substances.")
-            input("Type END to leave")
+            end = input("Type END to leave: ")
 
         elif do == "RESIST":
             print("ARE you sure you want to do this? You won't be able to go back if you leave this behind. (YES/GIVE IN)")
@@ -40,7 +38,7 @@ if do == "RIGHT":
                             print("You're done. Cause: Brain death.")
                             print("Deceased Identification:")
                             print(name)
-                            input("Type END to leave")
+                            end = input("Type END to leave: ")
 
 
                         elif do == "BASH":
@@ -60,7 +58,7 @@ if do == "RIGHT":
                                 print("Game play-tested by:")
                                 print(name)
                                 print("Thank you for playing my game :)")
-                                input("Type END to leave")
+                                end = input("Type END to leave: ")
 
                             elif do == "BASH":
                                 print("You decide to take matters into your own hands, and run for the window. If you're going down, you're not going down without a fight.")
@@ -81,7 +79,7 @@ if do == "RIGHT":
                                     print("Game play-tested by:")
                                     print(name)
                                     print("Thank you for playing my game :)")
-                                    input("Type END to leave")
+                                    end = input("Type END to leave: ")
 
 
 
@@ -89,25 +87,25 @@ if do == "RIGHT":
                         print("You turn around, taking a deep gulp as you do so. ")
                         print("Standing in front of you seemed to be another figure in a space suit, colored in a shade of red rather than your own white. He looked almost exactly like you, but something about him seemed different... ")
                         print("BAD END 2: The Suspicious one in Red")
-                        input("Type END to leave")
+                        end = input("Type END to leave: ")
 
                 elif do == "GIVE IN":
                     print("You decide to cave just as you're starting to leave this room behind.")
                     print("The plate seemed to have completely disappeared when you turned around. Your severe disappointment is too overwhelming, and you proceed to fall to the floor. The moment you hit the ground, You're brought back to the caves. It seems that the paths you could have taken has drastically expanded, each route leading you to an inevitable fate that results in your demise. Each time you die, you come back, but with more pointless choises where you just die, over and over again. The nightmare never ends, and you know it.")
                     print("BAD END 1: You've met a terrible fate, haven't you?")
-                    input("Type END to leave")
+                    end = input("Type END to leave: ")
 
-        elif do == "LEFT":
+elif do == "LEFT":
             print("The pathway seems to incline drastically downwards, and the ground seems to transition from stone to ice.")
             print("Your foot slips, causing you to fall face first into a pit. your head violently hits the end, the rest of your limp body following after.")
             print("You're Done. Cause: Severe Trauma to the Head.")
             print("Deceased Identification:")
             print(name)
-            input("Type END to leave")
-        elif do == "STRAIGHT":
-            print("The path seemed safe enough, but the sounds become even louder. The walls begin to twist as your head begins to hurt.")
-            print("The sound was replaced by the crumbling of the ground, as the floor gave way to a massive pit of lava. you promptly fall in")
-            print("You're Done. Cause: Cremation.")
-            print("Deceased Identification:")
-            print(name)
-            input("Type END to leave")
+            end = input("Type END to leave: ")
+elif do == "STRAIGHT":
+    print("The path seemed safe enough, but the sounds become even louder. The walls begin to twist as your head begins to hurt.")
+    print("The sound was replaced by the crumbling of the ground, as the floor gave way to a massive pit of lava. you promptly fall in")
+    print("You're Done. Cause: Cremation.")
+    print("Deceased Identification:")
+    print(name)
+    end = input("Type END to leave: ")
